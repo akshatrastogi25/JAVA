@@ -7,43 +7,42 @@ class LinkedList {
 
     private Node head;
 
-    // {
+    {
     public void insert(int data) {
-        //create a new Node and store a data.
+       
         Node node = new Node();
         node.data = data;
         node.nextNode = null;
 
-        //check the head is null or not.
-        //if head is null, assign the Node and exit.
+       
         if (this.head == null) {
             head = node;
             return;
         }
 
-        //assign a head into the temp Node and loop it until find the null reference.
+        
         Node tempNode = this.head;
         while (tempNode.nextNode != null) {
             tempNode = tempNode.nextNode;
         }
 
-        //assign new node.
+       
         tempNode.nextNode = node;
     }
-    // }
+    }
 
     public void insertNth(int data, int position) {
-        //create new node.
+       
         Node node = new Node();
         node.data = data;
         node.nextNode = null;
 
 
         if (this.head == null) {
-            //if head is null and position is zero then exit.
+           
             if (position != 0) {
                 return;
-            } else { //node set to the head.
+            } else { 
                 this.head = node;
             }
         }
@@ -74,12 +73,12 @@ class LinkedList {
         previous.nextNode = node;
     }
 
-    // {
+     {
     public void print() {
         if (this.head == null) {
             return;
         }
-        //print all nodes
+     
         Node tempNode = this.head;
         while (tempNode != null) {
             System.out.print(tempNode.data + "->");
@@ -87,7 +86,7 @@ class LinkedList {
         }
         System.out.println("NULL");
     }
-    // }
+     }
 
 }
 public class Main {
