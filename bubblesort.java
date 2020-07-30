@@ -4,7 +4,7 @@ public class Main{
     {
         Scanner s=new Scanner(System.in);
         int n=s.nextInt();
-        int i,j,temp=0;
+        int i,j,t=0;
         int ar[]=new int[n];
         Boolean swap=false;
         for(i=0;i<n;i++)
@@ -19,9 +19,9 @@ public class Main{
                 {
                     swap=true;
                     
-                    temp=ar[j];
+                    t=ar[j];
                     ar[j]=ar[j+1];
-                    ar[j+1]=temp;
+                    ar[j+1]=t;
 
                 }
               
