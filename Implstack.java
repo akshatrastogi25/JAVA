@@ -3,9 +3,9 @@ import java.util.List;
 
 class Stack
 {
-	private int[] arr;
-	private int capacity;
-	private int top1, top2;
+	 int[] arr;
+	int capacity;
+	int top1, top2;
 	public Stack(int n)
 	{
 		capacity = n;
