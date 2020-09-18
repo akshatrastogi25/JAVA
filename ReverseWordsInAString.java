@@ -2,7 +2,7 @@
 //For example,
 //Given s = "the sky is blue",
 //return "blue is sky the".
-import java.util.*;
+
 public class ReverseWordsInAString {
     public String reverseWords(String s) {
         String[] words = s.trim().split("\\s+");
